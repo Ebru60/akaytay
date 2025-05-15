@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>İletişimı</title>
+  <link rel="stylesheet" href="../css/stil.css">
+</head>
+<body>
+
+  <div id="navbar"></div>
+
+  
+
+
+  <!-- Ana İçerik Alanı -->
+  <main>
+    <main>
+  <h1>İletişim Formu</h1>
+  <form id="iletisimFormu" action="formveri.html" method="GET">
+    <label for="ad">Adınız:</label><br>
+    <input type="text" id="ad" name="ad" required><br><br>
+
+    <label for="tür">En sevdiğiniz film türü:</label><br>
+    <select id="tür" name="tür" required>
+      <option value="">Seçiniz</option>
+      <option value="Aksiyon">Aksiyon</option>
+      <option value="Komedi">Komedi</option>
+      <option value="Dram">Dram</option>
+      <option value="Korku">Korku</option>
+      <option value="Bilim Kurgu">Bilim Kurgu</option>
+      <option value="Romantik">Romantik</option>
+    </select><br><br>
+
+    <label for="film">Favori filminiz:</label><br>
+    <input type="text" id="film" name="film"><br><br>
+
+    <label for="puan">Bu filme puanınız (1–5):</label><br>
+    <input type="number" id="puan" name="puan" min="1" max="5"><br><br>
+
+    <button type="submit">Gönder</button>
+  </form>
+</main>
+
+
+  </main>
+
+  <div id="footer"></div>
+  <script src="../js/include.js"></script>
+
+</body>
+</html>
